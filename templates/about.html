@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<style>
+    body{
+        background-image: linear-gradient(to bottom, #0B5394, #F4900C);
+    }
+    .profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 50px;
+  
+}
+
+.profile-pic img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.profile-info {
+  text-align: center;
+}
+
+.profile-info h1 {
+  font-size: 36px;
+  margin-top: 20px;
+}
+
+.profile-info h2 {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.profile-info p {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+nav {
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    nav a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: #0b5394;
+      color: orangered;
+    }
+
+    .active {
+      background-color: #000000;
+      
+        
+    }
+    
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+  font-size: 15px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 15px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+.social-media {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .social-media img {
+      height: 40px;
+      margin: 0 10px;
+    }
+
+    .instagram {
+      background-color: #e4405f;
+      border-radius: 50%;
+      padding: 5px;
+    }
+
+    .facebook {
+      background-color: #3b5998;
+      border-radius: 50%;
+      padding: 5px;
+    }
+</style>
+</head>
+<body>
+    <nav>
+        <a class="active" href="/">Home</a>
+        
+      </nav>
+  <div class="profile">
+    <div class="profile-pic">
+      <img src="../static/img/gator.png" alt="User Profile Picture">
+    </div>
+
+
+
+<div class="card">
+  
+    <div class="profile-info">
+        <h1><b>My Profile</b></h1><hr/>
+        
+        <p>
+        Name: Sarah</p>
+        <p>Age: 32</p>
+        <p>Occupation: Marketing Manager</p>
+        
+        <p>Interests: Photography, Hiking</p>
+        <p>Events Booked: Career Show, Badminton Tournament</p>
+      </p>
+  
+  
+  <button>Edit Profile</button> &nbsp;&nbsp;
+  <button>Delete Profile</button>
+  
+  <p><div class="social-media">
+    <a href="#" class="instagram">
+      <img src="../static/img/instagram.png" alt="Instagram">
+    </a>&nbsp;&nbsp;&nbsp;
+    <a href="#" class="facebook">
+      <img src="../static/img/twitter.png" alt="Facebook">
+    </a>
+  </div></p>
+</div>
+
+</body>
+</html>

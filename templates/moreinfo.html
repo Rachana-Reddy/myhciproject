@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Gator Idol</title>
+    <link rel="stylesheet" href="../static/css/style1.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <style>
+      body{
+        background-image: linear-gradient(to bottom, #0B5394, #F4900C);
+      }
+    </style>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li class="active"><a href="/aboutorg">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="event-info">
+        <img src="../static/img/concert.jpg" alt="Event Image">
+        <div class="event-details">
+          <h1>Gator Idol</h1>
+          <p>Gator Idol is an annual singing contest held at the University of Florida in Gainesville, Florida. The contest features talented singers from the university community who compete for the grand prize. The event is typically hosted by the university's student government, and is a highly anticipated event among students and faculty. Participants perform in front of a panel of judges who assess their vocal ability, stage presence, and overall performance. The winner of the contest receives a cash prize and the opportunity to perform at various university events throughout the year. Gator Idol is a fun and exciting event that showcases the incredible talent of the university's students and provides an opportunity for them to shine in front of their peers.</p>
+          <ul class="event-meta">
+            <time class="start-date" datetime="2023-04-10" data-testid="start-date-standard">Apr 10</time>
+            <div class="icons-container">
+              <div class="icon">
+                <img src="../static/img/chunky-heart-icon.png" alt="Chunky Heart Icon">
+              </div>
+              <div class="icon">
+                <img src="../static/img/share-icon.png" alt="Share Icon">
+              </div>
+            </div>            
+            <section aria-labelledby="when-and-where" class="event-details__section">
+              <div class="event-details__main-inner">
+                <div class="event-details__section-title">
+                  <h2 style="margin-bottom:20px;">When and where</h2>
+                </div>
+              </div>
+              <div class="detail-grid">
+                <section aria-labelledby="date-time-heading">
+                  <div class="detail">
+                    <div class="detail__inner">
+                      <div class="detail__heading">
+                        <h3 id="date-time-heading">Date and time</h3>
+                      </div>
+                      <p><span class="">Monday, April 10 · 12 - 12:30pm EDT</span></p>
+                    </div>
+                  </div>
+                </section>
+                <section aria-labelledby="location-heading">
+                  <div class="detail">
+                    <div class="detail__inner">
+                      <div class="detail__heading">
+                        <h3 id="location-heading">Location</h3>
+                      </div>
+                      <p>Online</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </section>            
+            <li>
+              <i class="fas fa-chair"></i>
+              <span>Seats Available:</span>
+              100
+            </li>
+            <li>
+              <i class="fas fa-dollar-sign"></i>
+              <span>Price per Seat:</span>
+              $20
+            </li>
+          </ul>
+          <div class="booking-info">
+            <img src="../static/img/book-icon.png" alt="Book Icon">
+            <p>To book your seats, please visit our <a href="/payments">booking page</a>.</p>
+          </div>
+        
+        </div>
+      </section>
+    </main>
+    <div id="questionsTab" style="float: right; width: 40%; padding-bottom: 7px;"class="card">
+      <!-- <p class="card-title h4" style="width: 100%;text-align: center;background-color: #1155cc;font-family: oswald;">Ask Open API</p> -->
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+          <a href="#" class="navbar-brand" id="navbarlogo">
+              Ask a question
+          </a>
+          <!-- <div style="margin-left: auto;">
+              <i class="fa fa-window-close" style="font-size: 30px;" aria-hidden="true" id="closeBox"></i>
+          </div> -->
+      </nav>
+      <div class="container" id="outputBox">
+      </div>
+      <br>
+      <div class="form-group sticky-bottom" style="margin: 0 5px;">
+          <input type="text" class="form-control" id="inputText" placeholder="Type your message">
+      </div>
+      <br>
+      <hr>
+      <div style="display: flex; flex-direction: row; justify-content: space-between;">
+      <div class="btn btn-danger" id="AskME"  style="width: 13%;"><i class="fa fa-question-circle" aria-hidden="true"></i></div>
+      <div class="btn btn-primary" id="submit">submit</div>
+      </div>
+  </div>
+  <!-- <div class="btn btn-danger" id="AskME"><i class="fa fa-question-circle" aria-hidden="true"></i></div> -->
+    <script src="https://kit.fontawesome.com/1234567890.js" crossorigin="anonymous"></script>
+    <script src="../static/js/openAI.js"></script>
+  </body>
+</html>
